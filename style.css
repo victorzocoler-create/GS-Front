@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 * {
-    font-family: "Jockey One", Roboto, Calibri, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@
 }
 
 
+/* pagina 1 */
 
 .banner img {
     background-image: url(./imagens/background.png);
@@ -36,12 +38,15 @@
 
 .texto-banner h2{
     font-size: 3.8em;
+    font-family: "Jockey One", Roboto, Calibri, sans-serif;
+    font-weight: 500;
 
 }
 
 .texto-banner p{
     font-size: 1.3em;
     margin-top: 30px;
+    
 
 }
 
@@ -59,6 +64,13 @@
     position: absolute;
     top: 80%;
     right: 15%;
+    &:hover{
+        transition: all .5s ease-in-out;
+        transform: translateY(-15px);
+
+    }
+    
+    
     
     
     
@@ -76,8 +88,21 @@
     border: 3px solid ;
     background-color: rgba(87, 208, 238, 0.2);
     border-radius: 30px;
+    cursor: pointer;
+    
     
 
 
 
+}
+
+.texto-auxiliar{
+    top: 60%;
+    position: absolute;
+    color: aqua;
+    margin-left: 30px;
+    font-size: 1.3em;
+    width: 40%;
+    
+   
 }
