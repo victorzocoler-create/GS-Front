@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 
 * {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-family: "Jockey One", Roboto, Calibri, sans-serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,8 +38,6 @@
 
 .texto-banner h2{
     font-size: 3.8em;
-    font-family: "Jockey One", Roboto, Calibri, sans-serif;
-    font-weight: 500;
 
 }
 
@@ -103,6 +101,5 @@
     margin-left: 30px;
     font-size: 1.3em;
     width: 40%;
-    
    
 }
