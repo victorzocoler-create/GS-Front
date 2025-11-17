@@ -12,7 +12,7 @@
 
 /* pagina 1 */
 
-.banner img {
+.banner  {
     background-image: url(./imagens/background.png);
     height: 100vh;
     width: 100vw;
@@ -24,11 +24,13 @@
 }
 .texto-banner {
     position: absolute;
-    top: 20%;
+    margin-top: 300px;
     color: white;
     text-align: left;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
     margin-left: 30px;
+    width: 40%;
     
     
     
@@ -44,14 +46,15 @@
 .texto-banner p{
     font-size: 1.3em;
     margin-top: 30px;
+   
     
 
 }
 
 .nome-grupo {
     position: absolute;
-    top: 10px;
-    left: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
     font-size: 2.2em;
     color: aqua;
 
@@ -60,8 +63,8 @@
 
 .botao {
     position: absolute;
-    top: 80%;
-    right: 15%;
+    margin-top: 900px;
+    margin-left: 950px;
     &:hover{
         transition: all .5s ease-in-out;
         transform: translateY(-15px);
@@ -92,11 +95,13 @@
 }
 
 .texto-auxiliar{
-    top: 60%;
+    margin-top: 800px;
     position: absolute;
     color: aqua;
     margin-left: 30px;
     font-size: 1.3em;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
    
 }
