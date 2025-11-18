@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 
-/* pagina 1 */
 
+/* pagina 1 */
 .banner {
     background-image: url(./imagens/background.png);
     background-size: cover;
@@ -25,63 +25,68 @@
 }
 
 
+
 .texto-banner {
     position: absolute;
-    top: 22%;        
-    left: 30px;
-    width: 45%;
+    top: 280px;       
+    left: 3%;         
+    width: 45%;       
     color: white;
 }
 
 .texto-banner h2 {
-    font-size: 3.2em;
+    font-size: 3.2rem;
+    line-height: 1.15;
 }
 
 .texto-banner p {
-    font-size: 1.2em;
-    margin-top: 20px;
+    margin-top: 20px; 
+    font-size: 1.25rem;
+    line-height: 1.4;
 }
+
 
 
 .nome-grupo {
     position: absolute;
-    top: 20px;
-    left: 40px;
-    font-size: 2em;
+    top: 20px;        
+    left: 3%;
+    font-size: 2.2rem;
     color: aqua;
 }
+
 
 
 .texto-auxiliar {
     position: absolute;
-    top: 60%;      
-    left: 30px;
+    top: 620px;        
+    left: 3%;
     width: 45%;
-    font-size: 1.2em;
     color: aqua;
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
+
 
 
 .botao {
     position: absolute;
-    top: 75%;       
-    right: 20%;
-    
-}
-
-.botao button:hover {
-    transform: translateY(-10px);
+    top: 750px;       
+    right: 15%;        
 }
 
 .botao button {
-    padding: 12px 80px;
-    margin: 8px;
-    font-size: 1.4em;
+    padding: 12px 70px;
+    margin: 10px;
+    font-size: 1.4rem;
     color: aqua;
     border: 3px solid aqua;
     background-color: rgba(87, 208, 238, 0.2);
     border-radius: 30px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: 0.4s ease;
 }
 
+.botao button:hover {
+    transform: translateY(-10px);
+}
