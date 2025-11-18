@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
-
 * {
     font-family: "Jockey One", Roboto, Calibri, sans-serif;
     font-weight: 300;
@@ -9,99 +8,80 @@
     box-sizing: border-box;
 }
 
-
 /* pagina 1 */
 
-.banner  {
+.banner {
     background-image: url(./imagens/background.png);
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    
-
-
+    position: relative;
 }
+
+
+.banner img {
+    display: none;
+}
+
+
 .texto-banner {
     position: absolute;
-    margin-top: 300px;
+    top: 22%;        
+    left: 30px;
+    width: 45%;
     color: white;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    width: 40%;
-    
-    
-    
-
-
 }
 
-.texto-banner h2{
-    font-size: 3.8em;
-
+.texto-banner h2 {
+    font-size: 3.2em;
 }
 
-.texto-banner p{
-    font-size: 1.3em;
-    margin-top: 30px;
-   
-    
-
+.texto-banner p {
+    font-size: 1.2em;
+    margin-top: 20px;
 }
+
 
 .nome-grupo {
     position: absolute;
-    margin-top: 10px;
-    margin-left: 40px;
-    font-size: 2.2em;
+    top: 20px;
+    left: 40px;
+    font-size: 2em;
     color: aqua;
-
-
 }
+
+
+.texto-auxiliar {
+    position: absolute;
+    top: 60%;      
+    left: 30px;
+    width: 45%;
+    font-size: 1.2em;
+    color: aqua;
+}
+
 
 .botao {
     position: absolute;
-    margin-top: 900px;
-    margin-left: 950px;
-    &:hover{
-        transition: all .5s ease-in-out;
-        transform: translateY(-15px);
-
-    }
-    
-    
-    
-    
-    
+    top: 75%;       
+    right: 20%;
     
 }
 
-.botao button{
-    padding: 10px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin: 10px;
+.botao button:hover {
+    transform: translateY(-10px);
+}
+
+.botao button {
+    padding: 12px 80px;
+    margin: 8px;
+    font-size: 1.4em;
     color: aqua;
-    font-size: 1.5em;
-    border-color: aqua;
-    border: 3px solid ;
+    border: 3px solid aqua;
     background-color: rgba(87, 208, 238, 0.2);
     border-radius: 30px;
     cursor: pointer;
-    
-    
+    transition: all .5s ease-in-out;
 }
 
-.texto-auxiliar{
-    margin-top: 800px;
-    position: absolute;
-    color: aqua;
-    margin-left: 30px;
-    font-size: 1.3em;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-   
-}
