@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100vw; 
+}
 
 /* pagina 1 */
 .banner {
@@ -89,4 +94,80 @@
 
 .botao button:hover {
     transform: translateY(-10px);
+}
+
+/* PAGINA 2 */
+.pagina2 {
+    background-color: #0b1120;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagina2 .nome-grupo {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.conteudo-pagina2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.projeto img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-top-right-radius: 30%;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+
+.explicar {
+    color: #ffffff;
+    text-align: left;
+}
+
+.explicar h1 {
+    color: #22e6ff;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+    text-align: left;
+}
+
+
+.explicar h2 {
+    color: #22e6ff;
+    margin: 20px 0 10px 0;
+    text-align: left;
+}
+
+.explicar p {
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.explicar ul {
+    margin: 10px 0 20px 20px;
+    text-align: left;
+}
+
+.explicar li {
+    margin: 8px 0;
+    line-height: 1.4;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    text-align: left;
 }
