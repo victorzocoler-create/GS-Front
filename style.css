@@ -8,88 +8,109 @@
     box-sizing: border-box;
 }
 
-html, body {
+ body {
     width: 100%;
     overflow-x: hidden;
     max-width: 100vw; 
+    background-color: #050816;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* pagina 1 */
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+* {
+    font-family: "Jockey One", Roboto, Calibri, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
 .banner {
     background-image: url(./imagens/background.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;     
+    background-repeat: no-repeat; 
+    background-position: center;  
+    
     height: 100vh;
     width: 100vw;
     position: relative;
+
+    overflow: hidden; 
 }
 
 
-.banner img {
-    display: none;
+.banner .bg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
-
-
-
-.texto-banner {
-    position: absolute;
-    top: 280px;       
-    left: 3%;         
-    width: 45%;       
-    color: white;
-}
-
-.texto-banner h2 {
-    font-size: 3.2rem;
-    line-height: 1.15;
-}
-
-.texto-banner p {
-    margin-top: 20px; 
-    font-size: 1.25rem;
-    line-height: 1.4;
-}
-
 
 
 .nome-grupo {
     position: absolute;
-    top: 20px;        
+    top: 2%;        
     left: 3%;
-    font-size: 2.2rem;
+    font-size: 3.0vw;  
     color: aqua;
 }
 
+
+.texto-banner {
+    position: absolute;
+    top: 20%;       
+    left: 3%;
+    width: 45%;
+    color: white;
+}
+
+.texto-banner h2 {
+    font-size: 3vw;
+    
+}
+
+.texto-banner p {
+    margin-top: 2%;
+    font-size: 1.3vw;
+    
+    
+}
 
 
 .texto-auxiliar {
     position: absolute;
-    top: 620px;        
+    top: 60%;    
     left: 3%;
-    width: 45%;
+    width: 40%;
     color: aqua;
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 1.2vw;
 }
-
 
 
 .botao {
     position: absolute;
-    top: 600px;       
-    right: 15%;        
+    top: 70%;
+    right: 20%;     
 }
 
 .botao button {
-    padding: 12px 70px;
+    padding: 10px 70px;
     margin: 10px;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
     color: aqua;
-    border: 3px solid aqua;
-    background-color: rgba(87, 208, 238, 0.2);
-    border-radius: 30px;
+    border: 0.25vw solid aqua;
+    background-color: rgba(87, 208, 238, 0.15);
+    border-radius: 2vw;
     cursor: pointer;
-    transition: 0.4s ease;
+    transition: 0.4s ease-in-out;
 }
 
 .botao button:hover {
@@ -97,21 +118,18 @@ html, body {
 }
 
 /* PAGINA 2 */
-.pagina2 {
+#pagina2 {
     background-color: #0b1120;
     width: 100%;
     padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     
 }
 
-.pagina2 .nome-grupo {
+#pagina2 .nome-grupo {
     position: relative;
-    top: 0;
-    left: 0;
+    
     margin-bottom: 30px;
-    text-align: center;
+    
     width: 100%;
 }
 
@@ -130,44 +148,165 @@ html, body {
     max-width: 500px;
     height: auto;
     border-top-right-radius: 30%;
+    transition: 0.4s ease-in-out;
+    
     &:hover{
         transform: translateY(-10px);
     }
 }
 
+.projeto {
+    display: flex;
+    justify-content: right;
+
+
+}
+
 .explicar {
     color: #ffffff;
-    text-align: left;
+    
 }
 
 .explicar h1 {
     color: #22e6ff;
     margin: 0 0 15px 0;
     line-height: 1.3;
-    text-align: left;
+    
 }
 
 
 .explicar h2 {
     color: #22e6ff;
     margin: 20px 0 10px 0;
-    text-align: left;
+    
 }
 
 .explicar p {
     margin: 10px 0;
     line-height: 1.5;
-    text-align: left;
+    
 }
 
 .explicar ul {
     margin: 10px 0 20px 20px;
-    text-align: left;
+   
 }
 
 .explicar li {
     margin: 8px 0;
     line-height: 1.4;
     font-size: clamp(0.9rem, 2vw, 1.1rem);
-    text-align: left;
+    
+}
+
+/* PAGINA 3 */
+
+header {
+  padding: 24px 32px;
+  border-bottom: 1px solid #1f2937;
+  background-color: #050816;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #22e6ff;
+}
+
+.subtitulo {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 900px;
+  margin: 32px auto 40px auto;
+  padding: 0 16px;
+}
+
+.bloco {
+  margin-bottom: 28px;
+  padding: 20px;
+  background-color: #0b1120;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+}
+
+.bloco h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #22e6ff;
+}
+
+.bloco p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.lista {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.grid-valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.valor {
+  background-color: #020617;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  padding: 12px;
+}
+
+.valor h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #22e6ff;
+}
+
+.valor p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.contato-box {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: #020617;
+  border: 1px solid #1f2937;
+}
+
+.contato-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-top: 1px solid #1f2937;
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 16px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  .bloco {
+    padding: 16px;
+  }
 }
